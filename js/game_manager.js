@@ -26,9 +26,9 @@ GameManager.prototype.keepPlaying = function () {
   this.actuator.continueGame(); // Clear the game won/lost message
 };
 
-// Return true if the game is lost, or has won and the user hasn't kept playing
+// Return true if the game is over, or has won and the user hasn't kept playing
 GameManager.prototype.isGameTerminated = function () {
-  return this.over || (this.won && !this.keepPlaying);
+  return /* FIX ME */
 };
 
 // Set up the game

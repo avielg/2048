@@ -12,8 +12,7 @@ Tile.prototype.savePosition = function () {
 };
 
 Tile.prototype.updatePosition = function (position) {
-  this.x = position.x;
-  this.y = position.y;
+  /* FIX ME */
 };
 
 Tile.prototype.serialize = function () {

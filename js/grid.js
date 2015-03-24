@@ -87,14 +87,17 @@ Grid.prototype.cellContent = function (cell) {
 
 // Inserts a tile at its position
 Grid.prototype.insertTile = function (tile) {
-  this.cells[tile.x][tile.y] = tile;
+  /* FIX ME */
 };
 
 Grid.prototype.removeTile = function (tile) {
-  this.cells[tile.x][tile.y] = null;
+  /* FIX ME */
 };
 
 Grid.prototype.withinBounds = function (position) {
+  /* FIX ME
+   * HINT: We want to know if the position is within the size of our grid...
+  */
   return position.x >= 0 && position.x < this.size &&
          position.y >= 0 && position.y < this.size;
 };
