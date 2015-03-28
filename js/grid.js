@@ -98,8 +98,6 @@ Grid.prototype.withinBounds = function (position) {
   /* FIX ME
    * HINT: We want to know if the position is within the size of our grid...
   */
-  return position.x >= 0 && position.x < this.size &&
-         position.y >= 0 && position.y < this.size;
 };
 
 Grid.prototype.serialize = function () {

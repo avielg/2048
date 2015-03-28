@@ -60,19 +60,16 @@ GameManager.prototype.setup = function () {
 
 // Set up the initial tiles to start the game with
 GameManager.prototype.addStartTiles = function () {
-  for (var i = 0; i < this.startTiles; i++) {
-    this.addRandomTile();
-  }
+  /* FIX ME
+    HINT: this.startTiles holds the amount of tiles to staty with...
+  */
 };
 
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
-  if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.9 ? 2 : 4;
-    var tile = new Tile(this.grid.randomAvailableCell(), value);
-
-    this.grid.insertTile(tile);
-  }
+  /*
+   FIX ME
+  */
 };
 
 // Sends the updated grid to the actuator
@@ -121,9 +118,12 @@ GameManager.prototype.prepareTiles = function () {
 
 // Move a tile and its representation
 GameManager.prototype.moveTile = function (tile, cell) {
-  this.grid.cells[tile.x][tile.y] = null;
-  this.grid.cells[cell.x][cell.y] = tile;
-  tile.updatePosition(cell);
+  /*
+    FIX ME
+    HINT: 1. remove what is currently in the grid.cells array for tile position
+          2. put the tile in the new position
+          3. tell the tile about it's new location
+  */
 };
 
 // Move tiles on the grid in the specified direction
@@ -268,5 +268,5 @@ GameManager.prototype.tileMatchesAvailable = function () {
 };
 
 GameManager.prototype.positionsEqual = function (first, second) {
-  return first.x === second.x && first.y === second.y;
+  /* FIX ME */
 };

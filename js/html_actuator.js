@@ -41,9 +41,9 @@ HTMLActuator.prototype.continueGame = function () {
 };
 
 HTMLActuator.prototype.clearContainer = function (container) {
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
-  }
+  /* FIX ME
+   HINT: We have a property for container called "firstChild" and a function called "removeChild(child)"22
+   */
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
